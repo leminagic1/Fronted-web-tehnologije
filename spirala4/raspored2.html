@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="raspored.css">
+    <meta name="raspored" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="raspored1.html">Prvi zadatak (1)</a></li>
+        <li><a href="raspored2.html">Prvi zadatak (2)</a></li>
+        <li><a href="raspored3.html">Prvi zadatak (3)</a></li>
+        <li><a href="raspored4.html">Prvi zadatak (4)</a></li>
+        <li><a href="raspored5.html">Prvi zadatak (5)</a></li>
+        <li><a href="planiranjeNastavnik.html">Drugi zadatak</a></li>
+        <li><a href="podaciStudent.html">Treći zadatak</a></li>
+        <li> <a href="posjecenost.html">Spirala 2, Zadatak 3</a> </li>
+        <li> <a href="obavijesti.html">Spirala 2, Zadatak 4</a> </li>
+    </ul>
+
+    <div class="container kutija" >
+        <div class="row red">
+            <div class="col-2 kolona"></div>
+            <div class="col-4 kolona">
+               
+                <form id="forma">
+                    <div class="form-group">
+                    <label for="naziv">Naziv predmeta</label>
+                    <input type="text" name="naziv" id="naziv">
+                </div>
+                <div class="form-group">
+                    <label for="tip">Tip aktivnosti</label>
+                    <input type="text" name="tip" id="tip">
+                </div>
+                    <div class="form-group">
+                    <label for="vrijeme">Vrijeme trajanja</label>
+                    <input type="time" name="vrijeme" id="vrijeme">
+                </div>
+                <div class="form-group">
+                    <label for="dan">Dan</label>
+                    <input type="text" name="dan" id="dan">
+                </div>
+                    <div>
+                        <button type="button" id="dugme">Filtriraj</button>
+                    </div>
+            
+
+
+    <p class="prvasmjena">08:00 10:00 12:00</p>
+
+    <p class="drugasmjena">15:00 17:00 19:00</p>
+    <div  id="sadrzaj">
+        <table>
+            <tr class="dan">
+                <td><strong>Ponedjeljak</strong></td>
+                <td></td>
+                <td></td>
+                <td class="boja aktivnost" id="puna"  colspan="6">DM predavanje</td>
+                <td class="boja aktivnost"  colspan="3">WT vježbe</td>
+                <td id="puna" class="isprekidana"></td>
+                <td class="boja aktivnost"  colspan="6">RMA predavanje</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="isprekidana"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="dan">
+                <td>Utorak</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="boja aktivnost"   colspan="3">RMA vježbe</td>
+                <td class="boja aktivnost"  id="puna" colspan="4">DM tutorijal</td>
+                <td class="boja aktivnost"  colspan="6">WT predavanje</td>
+                <td class="isprekidana"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="dan">
+                <td>Srijeda</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="boja aktivnost" id="puna"   colspan="6">OI <br> predavanje </td>
+                <td colspan="6"></td>
+                <td></td>
+                <td></td>
+                <td class="isprekidana"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="dan">
+                <td>Četvrtak</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="isprekidana"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="dan">
+                <td>Petak</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="isprekidana"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+ 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+ 
+
+<script src="filtriraj.js"></script>
+<script src="raspored.js"></script>
+<script src="test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <title>Mocha Tests</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+   <link rel="stylesheet" href="raspored.css">
+
+ </head>
+ <body>
+   <div id="ispis"></div>
+   <div id="mocha"></div>
+
+   <div  id="sadrzaj">
+       <table>
+           <tr class="dan" id="prvat">
+               <td><strong>Ponedjeljak</strong></td>
+               <td></td>
+               <td></td>
+               <td class="boja aktivnost" id="puna"  colspan="6">RMA predavanje</td>
+               <td class="boja aktivnost"  colspan="3">WT vježbe</td>
+               <td id="puna" class="isprekidana"></td>
+               <td class="boja aktivnost"  colspan="6">WT predavanje</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td class="isprekidana"></td>
+               <td></td>
+               <td></td>
+               <td></td>
+           </tr>
+           <tr class="dan">
+               <td>Utorak</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td class="boja aktivnost"   colspan="3">RMA vježbe</td>
+               <td class="boja aktivnost"  id="puna" colspan="4">DM tutorijal</td>
+               <td class="boja aktivnost"  colspan="6">DM predavanje</td>
+               <td class="isprekidana"></td>
+               <td></td>
+               <td></td>
+               <td></td>
+           </tr>
+           <tr class="dan">
+               <td>Srijeda</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td class="boja aktivnost" id="puna"   colspan="6">OI <br> predavanje </td>
+               <td colspan="6"></td>
+               <td></td>
+               <td></td>
+               <td class="isprekidana"></td>
+               <td></td>
+               <td></td>
+               <td></td>
+           </tr>
+           <tr class="dan">
+               <td>Četvrtak</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td class="isprekidana"></td>
+               <td></td>
+               <td></td>
+               <td></td>
+           </tr>
+           <tr class="dan">
+               <td>Petak</td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td class="isprekidana"></td>
+               <td></td>
+               <td></td>
+               <td></td>
+           </tr>
+       </table>
+       <table>
+        <tr class="dan"  id="drugat">
+            <td><strong>Ponedjeljak</strong></td>
+            <td></td>
+            <td></td>
+            <td class="boja aktivnost" id="puna"  colspan="6">DM predavanje</td>
+            <td class="boja aktivnost"  colspan="3">WT vježbe</td>
+            <td id="puna" class="isprekidana"></td>
+            <td class="boja aktivnost"  colspan="6">RMA predavanje</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="isprekidana"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="dan">
+            <td>Utorak</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="boja aktivnost"   colspan="3">RMA vježbe</td>
+            <td class="boja aktivnost"  id="puna" colspan="4">DM tutorijal</td>
+            <td class="boja aktivnost"  colspan="6">WT predavanje</td>
+            <td class="isprekidana"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="dan">
+            <td>Srijeda</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="boja aktivnost" id="puna"   colspan="6">OI <br> predavanje </td>
+            <td colspan="6"></td>
+            <td></td>
+            <td></td>
+            <td class="isprekidana"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="dan">
+            <td>Četvrtak</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="isprekidana"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="dan">
+            <td>Petak</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="isprekidana"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table>
+      <tr class="dan"  id="trecat">
+          <td><strong>Ponedjeljak</strong></td>
+          <td></td>
+          <td></td>
+          <td class="boja aktivnost" id="puna"  colspan="6">OI predavanje</td>
+          <td class="boja aktivnost"  colspan="3">RMA vježbe</td>
+          <td id="puna" class="isprekidana"></td>
+          <td class="boja aktivnost"  colspan="6">WT predavanje</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="isprekidana"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr class="dan">
+          <td>Utorak</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="boja aktivnost"   colspan="3">WT vježbe</td>
+          <td class="boja aktivnost"  id="puna" colspan="4">DM tutorijal</td>
+          <td class="boja aktivnost"  colspan="6">DM predavanje</td>
+          <td class="isprekidana"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr class="dan">
+          <td>Srijeda</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="boja aktivnost" id="puna"   colspan="6">RMA <br> predavanje </td>
+          <td colspan="6"></td>
+          <td></td>
+          <td></td>
+          <td class="isprekidana"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr class="dan">
+          <td>Četvrtak</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="isprekidana"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr class="dan">
+          <td>Petak</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="isprekidana"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+  </table>
+   </div>
+
+ 
+   <script src="https://unpkg.com/chai/chai.js"></script>
+   <script src="https://unpkg.com/mocha/mocha.js"></script>
+ 
+   <script class="mocha-init">
+     mocha.setup('bdd');
+     mocha.checkLeaks();
+   </script>
+   <script src="filtriraj.js"></script>
+   <script src="test.js"></script>
+   <script class="mocha-exec">
+     mocha.run();
+   </script>
+ </body>
+</html>
